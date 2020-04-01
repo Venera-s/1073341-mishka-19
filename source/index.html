@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo main-logo" href="#">
-      <img class="main-logo__image" src="#" width="" height="" alt="Логотип Мишка">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип Мишка">
     </a>
 
     <nav class="main-nav">
@@ -30,90 +30,114 @@
 
   <main class="page-main">
     <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
-    <section class="products">
-      <div class="products__section">
-        <a class="products__interior" href="#">Предметы интерьера</a>
-        <a class="products__toys" href="#">Детские игрушки</a>
+    <section class="product">
+      <div class="product__wrapper">
+        <div class="product__section">
+          <a class="product__interior" href="#">Предметы интерьера</a>
+          <a class="product__toys" href="#">Детские игрушки</a>
+        </div>
+        <h2 class="product__title">Вязаные игрушки</h2>
+        <p class="product__week week-product">Товар недели</p>
+        <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="product__list">
+          <tr>
+            <td class="product__field">Цвет:</td>
+            <td class="product__value">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="product__field">Диаметр:</td>
+            <td class="product__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="product__field">Высота:</td>
+            <td class="product__value">15 см</td>
+          </tr>
+        </table>
+        <img class="product__image" src="#" alt="Вазяные корзинки">
+        <p class="product__price">Цена: 990 руб.</p>
+        <a class="product__order" href="#">Заказать</a>
       </div>
-      <h2 class="products__title">Вязаные игрушки</h2>
-      <p class="products__week">Товар недели</p>
-      <p class="products__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-      </p>
-      <table class="products__list">
-        <tr>
-          <td class="products__field">Цвет:</td>
-          <td class="products__value">«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td class="products__field">Диаметр:</td>
-          <td class="products__value">25 см</td>
-        </tr>
-        <tr>
-          <td class="products__field">Высота:</td>
-          <td class="products__value">15 см</td>
-        </tr>
-      </table>
-      <img class="products__image" src="#" alt="Вазяные корзинки">
-      <p class="products__price">Цена: 990 руб.</p>
-      <a class="products__order" href="#">Заказать</a>
     </section>
     <section class="about-us">
-      <h2>Коротко о нас:</h2>
-      <ul class="about-us__list">
-        <li class="about-us__item">Экологически чистые материалы</li>
-        <li class="about-us__item">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item">Поддержка отечественного производителя</li>
-        <li class="about-us__item">Поставляется в подарочной упаковке</li>
-      </ul>
+      <div class="about-us__wrapper">
+        <h2>Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отечественного производителя</li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
-            количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
-            мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
-          <cite class="reviews__user-name">Анастасия Красильникова</cite>
-          <p class="reviews__user-nick">@misssssiskras</p>
-        </li>
-        <li class="reviews__item">
-          <blockquote class="reviews__text">Обожаю изделия ручной работы и сама все делаю своими руками. Прикупила в
-            интернет-магазине «Мишка» столько красивой и красочной пряжи, что можно утонуть в этой красоте. Очень
-            хороший магазин. Всем советую! А я побежала вязать красоту:)</blockquote>
-          <cite class="reviews__user-name">Вилена Солонникова</cite>
-          <p class="reviews__user-nick">@vilena_master</p>
-        </li>
-        <li class="reviews__item">
-          <blockquote class="reviews__text">Очень качественная пряжа и большое выбор ассортимента. Являюсь постоянной
-            покупательницей данного магазина. Своим внукам каждую зиму вяжу теплые, красивые вещи.</blockquote>
-          <cite class="reviews__user-name">Иванова Елена Васильевна</cite>
-          <p class="reviews__user-nick">@grandmother_helen</p>
-        </li>
-      </ul>
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
-      <a class="reviews__write button">Написать</a>
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
+              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
+              мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+            <cite class="reviews__user-name">Анастасия Красильникова</cite>
+            <p class="reviews__user-nick">@misssssiskras</p>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__text">Обожаю изделия ручной работы и сама все делаю своими руками. Прикупила в
+              интернет-магазине «Мишка» столько красивой и красочной пряжи, что можно утонуть в этой красоте. Очень
+              хороший магазин. Всем советую! А я побежала вязать красоту:)</blockquote>
+            <cite class="reviews__user-name">Вилена Солонникова</cite>
+            <p class="reviews__user-nick">@vilena_master</p>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__text">Очень качественная пряжа и большое выбор ассортимента. Являюсь постоянной
+              покупательницей данного магазина. Своим внукам каждую зиму вяжу теплые, красивые вещи.</blockquote>
+            <cite class="reviews__user-name">Иванова Елена Васильевна</cite>
+            <p class="reviews__user-nick">@grandmother_helen</p>
+          </li>
+        </ul>
+        <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
+        <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
+        <a class="reviews__write button">Написать</a>
+      </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <p class="contacts__email">e-mail:</p>
-      <p class="contacts__email-value">info@mimimishkashop.ru</p>
-      <p class="contacts__adress">адрес:</p>
-      <p class="contacts__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-      <img class="contacts__map" width="#" height="#" alt="Карта с адресом интернет-магазина Мишка">
-      <a class="contacts__feedback button" href="#">Напишите нам</a>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__email email">
+          <p class="email__name">e-mail:</p>
+          <p class="email__text">info@mimimishkashop.ru</p>
+        </div>
+        <div class="contacts__adress adress">
+          <p class="adress__name">адрес:</p>
+          <p class="adress__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </div>
+        <img class="contacts__map" src="#" width="#" height="#" alt="Карта с адресом интернет-магазина Мишка">
+        <a class="contacts__feedback button" href="#">Напишите нам</a>
+      </div>
     </section>
-
-
-
-
-
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <img class="page-footer__logo-image" src="#" width="#" height="#" alt="Логотип Мишка">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--instagram" aria-label="Мишка в инстаграмме"></li>
+            <li class="social__item social__item--faceebook" aria-label="Мишка в фейсбуке"></li>
+            <li class="social__item social__item--twitter" aria-label="Мишка в твиттере"></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__logo">
+            <img class="copyright__logo-image" src="#" width="#" height="#">
+          </a>
+        </div>
+      </div>
+    </footer>
   </main>
-
-
-
 </body>
 
 </html>
