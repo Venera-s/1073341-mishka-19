@@ -15,14 +15,33 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">Каталог товаров</li>
-          <li class="site-list__item">Вязание на заказ</li>
-          <li class="site-list__item site-list__item--loupe">Поиск по сайту</li>
-          <li class="site-list__item site-list__item--basket">Корзина: пока пуста</li>
-          <li class="site-list__item">Новые поступления</li>
-          <li class="site-list__item">Распродажа</li>
-          <li class="site-list__item">Бесплатная доставка по России</li>
+        <div class="main-nav__container">
+          <ul class="main-nav__list1 site-menu">
+            <li class="main-nav__item1 site-menu__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item1 site-menu__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list2 site-menu">
+            <li class="main-nav__item2 site-menu__item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item2 site-menu__item"><a href="#">Распродажа</a></li>
+          </ul>
+        </div>
+        <div class="main-nav__container">
+          <ul class="main-nav__list3 site-menu">
+            <li class="main-nav__item3">
+              <form class="site-search" method="get" action="https://echo.htmlacademy.ru">
+                <input class="site-search__input" id="search-field" type="search" name="search"
+                  placeholder="Поиск по сайту">
+                <label class="site-search__label" for="search-field">
+                  <span class="visually-hidden">Поиск</span>
+                </label>
+              </form>
+            </li>
+            <li class="main-nav__item3 site-menu__item"><a class="main-nav__item2--basket" href="#">Корзина: пока
+                пуста</a></li>
+          </ul>
+        </div>
+        <ul class="main-nav__list4">
+          <li class="main-nav__item4 delivery-free">Бесплатная доставка по России</li>
         </ul>
       </div>
     </nav>
@@ -30,39 +49,34 @@
 
   <main class="page-main">
     <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
-    <section class="goods">
-      <h2 class="visually-hidden">Товары интернет-магазина Мишка</h2>
-      <div class="goods__wrapper">
-        <div class="goods__section">
-          <a class="goods__interior" href="#">Предметы интерьера</a>
-          <a class="goods__toys" href="#">Детские игрушки</a>
-        </div>
-        <article class="product">
-          <h2 class="product__title">Вязаные игрушки</h2>
-          <p class="product__week week-product">Товар недели</p>
-          <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-            размерах.
-          </p>
-          <table class="product__list">
-            <tr>
-              <td class="product__field">Цвет:</td>
-              <td class="product__value">«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td class="product__field">Диаметр:</td>
-              <td class="product__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="product__field">Высота:</td>
-              <td class="product__value">15 см</td>
-            </tr>
-          </table>
-          <img class="product__image" src="#" alt="Вазяные корзинки">
-          <p class="product__price">Цена: 990 руб.</p>
-          <a class="product__order" href="#">Заказать</a>
-        </article>
-      </div>
-    </section>
+    <div class="goods__section">
+      <a class="goods__interior" href="#">Предметы интерьера</a>
+      <a class="goods__toys" href="#">Детские игрушки</a>
+    </div>
+    <article class="product">
+      <h2 class="product__title">Вязаные игрушки</h2>
+      <p class="product__week week-product">Товар недели</p>
+      <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+        размерах.
+      </p>
+      <table class="product__list">
+        <tr>
+          <td class="product__field">Цвет:</td>
+          <td class="product__value">«Тиффани»/серый</td>
+        </tr>
+        <tr>
+          <td class="product__field">Диаметр:</td>
+          <td class="product__value">25 см</td>
+        </tr>
+        <tr>
+          <td class="product__field">Высота:</td>
+          <td class="product__value">15 см</td>
+        </tr>
+      </table>
+      <img class="product__image" src="#" alt="Вазяные корзинки">
+      <p class="product__price">Цена: 990 руб.</p>
+      <a class="product__order" href="#">Заказать</a>
+    </article>
     <section class="about-us">
       <div class="about-us__wrapper">
         <h2 class="about-us__title">Коротко о нас:</h2>
