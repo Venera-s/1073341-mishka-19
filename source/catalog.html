@@ -18,7 +18,7 @@
         <div class="main-nav__container">
           <ul class="main-nav__list site-menu">
             <li class="site-menu__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a>Каталог товаров</a>
             </li>
             <li class="site-menu__item">
               <a href="form.html">Вязание на заказ</a>
@@ -54,15 +54,15 @@
     </nav>
   </header>
 
-  <main class="catalog-main">
-    <div class="catalog-main__title catalog-main__title--decoration">
-      <h1 class="catalog-main__title-text">Каталог товаров</h1>
+  <main>
+    <div class="main-header">
+      <h1 class="main-header__title">Каталог товаров</h1>
     </div>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров каталога</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <article class="catalog__info product-card">
+          <article class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="" width="#" height="#" alt="Игрушка Зайчик-попрыгайчик">
             </a>
@@ -75,7 +75,7 @@
           </article>
         </li>
         <li class="catalog__item">
-          <article class="catalog__info product-card">
+          <article class="product-card">
             <a href="#">
               <h2 class="product-card__title">Корзинка для белья</h2>
             </a>
@@ -102,22 +102,18 @@
         </li>
       </ul>
     </section>
-    <section class="catalog-video">
-      <ul class="catalog-video__list">
-        <li class="catalog-video__item">
-          <article class="catalog-video__card product-video">
-            <h2 class="product-video__title">Процесс производства</h2>
-            <div class="product-video__wrapper">
-              <img class="product-video__image" src="#" width="#" height="" alt="Процесс производства товара">
-              <button class="product-video__play" type="button"
-                aria-label="Смотреть видое процесса производства товара"></button>
-            </div>
-            <p class="product-video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-              как появляются наши товары.</p>
-            <a class="product-video__btn btn" href="№">Сделать заказ</a>
-          </article>
-        </li>
-      </ul>
+    <section class="product-video">
+      <h2 class="visually-hidden">Видео о процессе производства</h2>
+      <article class="product-video__card video">
+        <h2 class="video__title">Процесс производства</h2>
+        <div class="video__wrapper">
+          <img class="video__image" src="#" width="#" height="" alt="Процесс производства товара">
+          <button class="video__play" type="button" aria-label="Смотреть видое процесса производства товара"></button>
+        </div>
+        <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары.</p>
+        <a class="video__btn btn" href="№">Сделать заказ</a>
+      </article>
     </section>
   </main>
   <footer class="page-footer">
@@ -150,10 +146,10 @@
     <h2 class="visually-hidden">Модальное окно корзины</h2>
     <strong class="modal-basket__title">Добавить товар в корзину</strong>
     <p class="modal-basket__choice">Выберите размер:</p>
-    <div class="modal-basket__list size-list">
-      <button class="size-list__item size-list__item--active" type="button">s</button>
-      <button class="size-list__item" type="button">m</button>
-      <button class="size-list__item" type="button">l</button>
+    <div class="modal-basket__list">
+      <button class="modal-basket__item modal-basket__item--active" type="button">s</button>
+      <button class="modal-basket__item" type="button">m</button>
+      <button class="modal-basket__item" type="button">l</button>
     </div>
     <button class="modal-basket__btn btn btn--basket">Добавить</button>
   </section>
