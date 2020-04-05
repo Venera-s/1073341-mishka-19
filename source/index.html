@@ -35,35 +35,38 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="main-nav__container">
-        <ul class="main-nav__list site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__loupe" href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__basket" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-nav__container"></div>
-      <ul class="main-nav__list site-menu">
-        <li class="site-menu__item site-menu__item--delivery">Бесплатная доставка по России</li>
-      </ul>
-      </div>
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link site-menu__link--loupe" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link site-menu__link--basket" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-menu">
+            <li class="site-menu__item site-menu__item--delivery">Бесплатная доставка по России</li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
-    <div class="goods">
-      <a class="goods__item goods__item--interior" href="#">Предметы интерьера</a>
-      <a class="goods__item goods__item--toys" href="#">Детские игрушки</a>
+  <main>
+    <div class="main-header">
+      <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+      <div class="main-header__sections">
+        <a class="main-header__link main-header__link--interior" href="#">Предметы интерьера</a>
+        <a class="main-header__link main-header__link--toys" href="#">Детские игрушки</a>
+      </div>
     </div>
+
+
     <article class="product">
       <h2 class="product__title">Вязаные игрушки</h2>
-      <p class="product__week week-product">Товар недели</p>
+      <p class="product__week product-label">Товар недели</p>
       <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.
       </p>
@@ -123,21 +126,23 @@
             <p class="reviews__user-nick">@grandmother_helen</p>
           </li>
         </ul>
-        <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
-        <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
-        <a class="reviews__btn btn" href="#">Написать</a>
       </div>
+      <button class="reviews__arrow  reviews__arrow--prev" type="button" aria-label="Предыдущий отзыв"></button>
+      <button class="reviews__arrow  reviews__arrow--next" aria-label="Следующий отзыв"></button>
+      <a class="reviews__btn btn" href="#">Написать</a>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__email email">
-          <p class="email__name">e-mail:</p>
-          <p class="email__text">info@mimimishkashop.ru</p>
+        <div class="contacts__email">
+          <p class="contacts__email-name">e-mail:</p>
+          <p class="contacts__email-text">
+            <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </p>
         </div>
-        <div class="contacts__adress adress">
-          <p class="adress__name">адрес:</p>
-          <p class="adress__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        <div class="contacts__adress">
+          <p class="contacts__adress-name">адрес:</p>
+          <p class="contacts__adress-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         </div>
         <img class="contacts__map" src="#" width="#" height="#" alt="Карта с адресом интернет-магазина Мишка">
         <a class="contacts__btn btn" href="#">Напишите нам</a>
@@ -179,7 +184,7 @@
       <button class="size-list__item" type="button">m</button>
       <button class="size-list__item" type="button">l</button>
     </div>
-    <button class="modal-basket__btn btn-add">Добавить</button>
+    <button class="modal-basket__btn btn btn--basket">Добавить</button>
   </section>
 </body>
 
