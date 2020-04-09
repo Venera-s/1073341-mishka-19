@@ -60,58 +60,51 @@
     </div>
     <section class="form">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <header class="form__header">
-        <p class="form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
-          свяжемся с вами, чтобы уточнить детали.</p>
-      </header>
+      <p class="form__header">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form__order" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset">
           <legend class="form__legend">Тип</legend>
-          <input class="visually-hidden form__input" type="radio" name="type-good" value="interior" id="interior-field"
-            checked>
+          <input class="visually-hidden form__input-type" type="radio" name="type-good" value="interior" id="interior-field" checked>
           <label for="interior-field">Аксессуар для интерьера</label>
-          <input class="visually-hidden form__input" type="radio" name="type-good" value="toys" id="toys-field">
+          <input class="visually-hidden form__input-type" type="radio" name="type-good" value="toys" id="toys-field">
           <label for="toys-field">Детская игрушка</label>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legeng">Цвет</legend>
-          <input class="visually-hidden form__input" type="checkbox" name="white" id="white-field" checked>
+          <input class="visually-hidden form__input-color" type="checkbox" name="white" id="white-field" checked>
           <label for="white-field">Белый</label>
-          <input class="visually-hidden form__input" type="checkbox" name="grey" id="grey-field" checked>
+          <input class="visually-hidden form__input-color" type="checkbox" name="grey" id="grey-field" checked>
           <label for="grey-field">Серый</label>
-          <input class="visually-hidden form__input" type="checkbox" name="tiffany" id="tiffany-field">
+          <input class="visually-hidden form__input-color" type="checkbox" name="tiffany" id="tiffany-field">
           <label for="tiffany-field">«Тиффани»</label>
-          <input class="visually-hidden form__input" type="checkbox" name="black" id="black-field">
+          <input class="visually-hidden form__input-color" type="checkbox" name="black" id="black-field">
           <label for="black-field">Черный</label>
-          <input class="visually-hidden form__input" type="checkbox" name="pink" id="pink-field">
+          <input class="visually-hidden form__input-color" type="checkbox" name="pink" id="pink-field">
           <label for="pink-field">Розовый</label>
-          <input class="visually-hidden form__input" type="checkbox" name="orange" id="orange-field">
+          <input class="visually-hidden form__input-color" type="checkbox" name="orange" id="orange-field">
           <label for="orange-field">Оранжевый</label>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Фио</legend>
           <label for="name-field">Имя:</label>
-          <input class="visually-hidden form__input" type="text" name="name" id="name-field"
-            placeholder="Введите ваше имя*" required>
+          <input class="visually-hidden form__input-person" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
           <label class="surname-field">Фамилия:</label>
-          <input class="visually-hidden form__input" type="text" name="surname" id="surname-field"
-            placeholder="Укажите фамилию*" required>
+          <input class="visually-hidden form__input-person" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
           <label for="middle-name-field">Отчество:</label>
-          <input class="visually-hidden form__input" type="text" name="middle-name" id="middle-name-field"
-            placeholder="Отчество, если желаете">
+          <input class="visually-hidden form__input-person" type="text" name="middle-name" id="middle-name-field" placeholder="Отчество, если желаете">
         </fieldset>
         <div class="form__wrapper">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Тел</legend>
-            <input class="vusually-hidden form__input" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input class="vusually-hidden form__input-tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">E-Mail</legend>
-            <input class="visually-hidden form__input" type="email" name="email" placeholder="Ваш Email*" required>
+            <input class="visually-hidden form__input-email" type="email" name="email" placeholder="Ваш Email*" required>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Доп</legend>
-            <textarea name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
         </div>
         <p class="form__note">*Поля обязательны для заполнения</p>
