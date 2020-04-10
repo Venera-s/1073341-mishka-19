@@ -1,3 +1,40 @@
+@import "normalize";
+@import "mixins";
+@import "variables";
+@import "font-face";
+@import "pixelperfect";
+@import "blocks/page-header";
+@import "blocks/main-nav.scss";
+@import "blocks/main-header.scss";
+
+
 body {
-  background: pink;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  @include color;
+  background-color: $bg-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
