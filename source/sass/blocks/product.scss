@@ -1,0 +1,25 @@
+.product {
+  @include margin(30px, 30px);
+}
+
+.product__title {
+  font-size: 25px;
+  line-height: 30px;
+  @include indent;
+  padding: 27px 0 5px 0;
+
+}
+
+.product__week {
+  @include indent;
+  padding-bottom: 24px;
+}
+
+.product__desc {
+  @include indent;
+  padding-bottom: 33px;
+}
+
+.product-row {
+  @include indent;
+}
