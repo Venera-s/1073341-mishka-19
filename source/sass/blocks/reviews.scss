@@ -1,1 +1,56 @@
-.reviews {}
+.reviews__title {
+  @include indent;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 27px;
+}
+
+.reviews__list {
+  @include indent;
+  list-style: $list-style;
+  padding-bottom: 30px;
+}
+
+.reviews__text {
+  @include indent;
+  line-height: 30px;
+  padding-bottom: 26px;
+}
+
+.reviews__user-name {
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: $font-weight;
+  font-style: normal;
+  // padding-bottom:
+}
+
+.reviews__user-nick {
+  @include indent;
+  font-size: 17px;
+  line-height: 33px;
+}
+
+.reviews__arrow-wrapper {
+  display: flex;
+}
+
+.reviews__arrow {
+  @include indent;
+  width: 50%;
+  height: 50px;
+  border: 1px solid #ececec;
+  background-color: transparent;
+}
+
+.reviews__arrow--prev {
+  background: url("../../img/icon-left-arrow.svg") 50% 50% no-repeat;
+}
+
+.reviews__arrow--next {
+  background: url("../../img/icon-right-arrow.svg") 50% 50% no-repeat;
+}
+
+.reviews__arrow-wrapper {
+  padding-bottom: 38px;
+}
