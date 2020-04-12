@@ -1,0 +1,12 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__text {
+  @include indent;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-right: 30px;
+}

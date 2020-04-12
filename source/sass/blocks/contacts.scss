@@ -1,3 +1,7 @@
+.contacts {
+  padding-bottom: 39px;
+}
+
 .contacts__title {
   @include indent;
   font-size: 18px;
@@ -22,14 +26,12 @@
   @include indent;
   line-height: 30px;
   padding-right: 30px;
-
 }
 
 .contacts__adress-text,
 .contacts__email-text {
   @include indent;
   line-height: 30px;
-
 }
 
 .contacts__email-link {
