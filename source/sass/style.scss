@@ -3,11 +3,17 @@
 @import "variables";
 @import "font-face";
 @import "pixelperfect";
+@import "blocks/btn.scss";
+@import "blocks/container.scss";
 @import "blocks/page-header";
 @import "blocks/main-nav.scss";
 @import "blocks/main-header.scss";
 @import "blocks/product.scss";
 @import "blocks/product-label.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+
+
 
 body {
   min-width: 320px;

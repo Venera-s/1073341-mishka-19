@@ -6,8 +6,3 @@
 @mixin color($color: #444444) {
   color: $color;
 }
-
-@mixin margin($right: 50px, $left: 50px) {
-  margin-right: $right;
-  margin-left: $left;
-}
