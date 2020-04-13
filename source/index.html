@@ -9,46 +9,46 @@
 </head>
 
 <body>
-  <header class="page-header container">
-    <a class="page-header__logo" href="#">
+  <header class="page-header">
+    <a class="page-header__logo container" href="#">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
         <div class="main-nav__container">
-          <ul class="main-nav__list site-menu">
-            <li class="site-menu__item">
-              <a href="catalog.html">Каталог товаров</a>
+          <ul class="main-nav__list main-nav__category">
+            <li class="main-nav__item container">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-menu__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-nav__container">
-          <ul class="main-nav__list site-menu">
-            <li class="site-menu__item">
-              <a href="#">Новые поступления</a>
-            </li>
-            <li class="site-menu__item">
-              <a href="#">Распродажа</a>
+            <li class="main-nav__item container">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
         </div>
         <div class="main-nav__container">
-          <ul class="main-nav__list site-menu">
-            <li class="site-menu__item">
-              <a class="site-menu__link site-menu__link--loupe" href="#">Поиск по сайту</a>
+          <ul class="main-nav__list main-nav__list-product">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новые поступления</a>
             </li>
-            <li class="site-menu__item">
-              <a class="site-menu__link site-menu__link--basket" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Распродажа</a>
             </li>
           </ul>
         </div>
         <div class="main-nav__container">
-          <ul class="main-nav__list site-menu">
-            <li class="site-menu__item site-menu__item--delivery">Бесплатная доставка по России</li>
+          <ul class="main-nav__list main-nav__list-user">
+            <li class="main-nav__item container">
+              <a class="main-nav__link main-nav__link--loupe" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item container">
+              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__container">
+          <ul class="main-nav__list main-nav__list-delivery">
+            <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
           </ul>
         </div>
       </div>
