@@ -1,0 +1,15 @@
+.inner-header {
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.inner-header__title {
+  @include indent;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-top: 69px;
+  padding-bottom: 76px;
+  text-align: center;
+  color: #000000;
+}
