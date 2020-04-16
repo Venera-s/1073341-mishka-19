@@ -1,8 +1,12 @@
 .catalog {
-
+  padding-top: 30px;
 }
 
 .catalog__list {
   @include indent;
   list-style: $list-style;
+}
+
+.catalog__item {
+  padding-bottom: 30px;
 }
