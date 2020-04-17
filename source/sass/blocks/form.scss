@@ -9,45 +9,52 @@
 }
 
 .form__fieldset {
-  @include indent;
   border: none;
 }
 
-.form__fieldset--type {
-  padding-bottom: 20px;
+.form__fieldset-type,
+.form__fieldset-color {
+  padding-bottom: 43px;
 }
 
 .form__legend {
   @include indent;
+  position: relative;
+  padding-bottom: 34px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: #63d1bb;
+
+    &::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 62px;
+    width: 198px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
 }
 
-.form__legend {
-  position: relative;
-  padding-bottom: 34px;
+.form__legend-email::after {
+  left: 80px;
+  width: 179px;
 }
 
-.form__legend::after {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: 62px;
-  width: 198px;
-  height: 1px;
-  background-color: #62d1ba;
+.form__legend-color {
+  padding-bottom: 37px;
 }
 
-.form__legend--color {
-  padding-bottom: 36px;
-}
 
 .form__wrapper {
   @include indent;
   position: relative;
+}
+
+.form__wrapper-type:not(:last-child) {
+  padding-bottom: 24px;
 }
 
 .form__label {
@@ -56,17 +63,14 @@
   line-height: 18px;
   font-weight: 700;
   padding-left: 62px;
+  color: #000000;
 }
 
-.form__label--type {
-  padding-bottom: 24px;
-}
-
-.form__label--color {
+.form__wrapper-color:not(:last-child){
   padding-bottom: 43px;
 }
 
-.form__input-type + .form__label--type::before {
+.form__input-type + .form__label-type::before {
   content: "";
   position: absolute;
   top: -9px;
@@ -77,7 +81,7 @@
   border-radius: 50%;;
 }
 
-.form__input-type:checked + .form__label--type::after {
+.form__input-type:checked + .form__label-type::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -89,7 +93,7 @@
   border-radius: 50%;
 }
 
-.form__input-color + .form__label--color::before {
+.form__input-color + .form__label-color::before {
   content: "";
   position: absolute;
   top: -11px;
@@ -99,9 +103,7 @@
   border: 2px solid rgb(68, 68, 68);
 }
 
-
-
-.form__input-color:checked + .form__label--color::after {
+.form__input-color:checked + .form__label-color::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -110,4 +112,84 @@
   height: 16px;
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
+}
+
+.form__input {
+  font-size: 17px;
+  line-height: 22px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 14px 0px;
+  @include color;
+
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__fieldset-data {
+  padding-bottom: 31px;
+}
+
+.form__legend-data {
+  padding-bottom: 28px;
+}
+
+.form__label-data {
+  padding-left: 0px;
+}
+
+.form__box-data:not(:last-child) {
+  padding-bottom: 22px;
+}
+
+.form__legend-tel,
+.form__legend-email {
+  padding-bottom: 7px;
+}
+
+.form__fieldset-contacts {
+  padding-bottom: 32px;
+}
+
+.form__input-tel {
+  font-size: 19px;
+}
+
+.form__legend-add {
+  padding-bottom: 25px;
+}
+
+.form__comment {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: transparent;
+  min-height: 142px;
+  width: 100%;
+  border: 2px solid #444444;
+  padding: 15px;
+}
+
+.form__fieldset-add {
+  padding-bottom: 10px;
+}
+
+.form__note {
+  @include indent;
+  @include color;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 30px;
+}
+
+// .form__fieldset-color{
+//   background-color: grey;
+// }
+
+.container1 {
+  background-color: grey;
 }
