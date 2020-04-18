@@ -35,6 +35,7 @@
 
 .reviews__arrow-wrapper {
   display: flex;
+  padding-bottom: 38px;
 }
 
 .reviews__arrow {
@@ -51,8 +52,4 @@
 
 .reviews__arrow--next {
   background: url("../../img/icon-right-arrow.svg") 50% 50% no-repeat;
-}
-
-.reviews__arrow-wrapper {
-  padding-bottom: 38px;
 }

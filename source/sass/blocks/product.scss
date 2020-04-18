@@ -6,8 +6,9 @@
 .product__title {
   font-size: 25px;
   line-height: 30px;
-  @include reset-indents;
   padding: 26px 0 5px;
+
+  @include reset-indents;
 }
 
 .product__week {
