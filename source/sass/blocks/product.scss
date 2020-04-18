@@ -6,17 +6,17 @@
 .product__title {
   font-size: 25px;
   line-height: 30px;
-  @include indent;
+  @include reset-indents;
   padding: 26px 0 5px;
 }
 
 .product__week {
-  @include indent;
+  @include reset-indents;
   padding-bottom: 24px;
 }
 
 .product__desc {
-  @include indent;
+  @include reset-indents;
   padding-bottom: 15px;
 }
 
@@ -27,14 +27,14 @@
 }
 
 .product__row {
-  @include indent;
+  @include reset-indents;
   line-height: 40px;
   border-bottom: 1px solid #ececec;
 }
 
 .product__field,
 .product__value {
-  @include indent;
+  @include reset-indents;
   text-align: left;
 }
 
@@ -49,9 +49,9 @@
 }
 
 .product__price {
-  @include indent;
+  @include reset-indents;
   font-size: 17px;
-  font-weight: $font-weight;
+  font-weight: $font-weight-bold;
   padding-bottom: 26px;
   text-align: center;
 }

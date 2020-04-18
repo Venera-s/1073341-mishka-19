@@ -3,7 +3,7 @@
 }
 
 .inner-header__title {
-  @include indent;
+  @include reset-indents;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;

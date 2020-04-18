@@ -7,6 +7,5 @@
 }
 
 .social__list {
-  @include indent;
-  list-style: $list-style;
+  @include reset-list;
 }

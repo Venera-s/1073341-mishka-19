@@ -3,20 +3,19 @@
 }
 
 .reviews__title {
-  @include indent;
+  @include reset-indents;
   font-size: 25px;
   font-weight: 700;
   padding-bottom: 27px;
 }
 
 .reviews__list {
-  @include indent;
-  list-style: $list-style;
+  @include reset-list;
   padding-bottom: 29px;
 }
 
 .reviews__text {
-  @include indent;
+  @include reset-indents;
   line-height: 30px;
   padding-bottom: 26px;
 }
@@ -24,12 +23,12 @@
 .reviews__user-name {
   font-size: 17px;
   line-height: 26px;
-  font-weight: $font-weight;
+  font-weight: $font-weight-bold;
   font-style: normal;
 }
 
 .reviews__user-nick {
-  @include indent;
+  @include reset-indents;
   font-size: 17px;
   line-height: 33px;
 }
@@ -39,7 +38,7 @@
 }
 
 .reviews__arrow {
-  @include indent;
+  @include reset-indents;
   width: 50%;
   height: 50px;
   border: 1px solid #ececec;

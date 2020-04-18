@@ -4,7 +4,7 @@
 }
 
 .copyright__text {
-  @include indent;
+  @include reset-indents;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;

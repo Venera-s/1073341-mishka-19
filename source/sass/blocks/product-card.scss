@@ -16,7 +16,7 @@
 }
 
 .product-card__title {
-  @include indent;
+  @include reset-indents;
   font-size: 17px;
   font-weight: 700;
   padding-top: 26px;
@@ -25,17 +25,18 @@
 
 .product-card__title-link {
   color: #000000;
+
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
-
 }
 
 .product-card__properties {
-  @include indent;
+  @include reset-indents;
   @include color;
   font-size: 13px;
   line-height: 30px;
@@ -48,12 +49,12 @@
 }
 
 .product-card__price {
-  @include indent;
+  @include reset-indents;
   font-weight: 700;
 }
 
 .product-card__basket {
-  @include indent;
+  @include reset-indents;
   width: 20px;
   height: 20px;
 }

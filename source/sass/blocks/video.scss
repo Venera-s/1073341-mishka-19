@@ -9,10 +9,10 @@
 }
 
 .video__title {
+  @include reset-indents;
   position: absolute;
   top: 24px;
   left: 119px;
-  @include indent;
   font-size: 17px;
   font-weight: 700;
   color: #000000;
@@ -29,7 +29,7 @@
 }
 
 .video__play {
-  @include indent;
+  @include reset-indents;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,7 +48,7 @@
 }
 
 .video__desc {
-  @include indent;
+  @include reset-indents;
   font-size: 13px;
   padding-bottom: 23px;
 }

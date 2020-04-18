@@ -7,36 +7,33 @@
 
 
 @media (min-width: $desktop-width) {
-
 }
 
-
 .main-nav__list {
-  @include indent;
-  list-style: $list-style;
+  @include reset-indents;
+  @include reset-list;
 }
 
 .main-nav__item {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  padding-top: 26px;
-  padding-bottom: 28px;
-  padding-left: 75px;
   border-bottom: 1px solid #ececec;
 }
 
 .main-nav__link {
   font-size: 17px;
   font-weight: 700;
+  padding-top: 26px;
+  padding-bottom: 28px;
+  padding-left: 45px;
   color: #000000;
 }
 
-.main-nav__list-product {
+.main-nav__list--product {
   display: none;
 }
 
-.main-nav__list-delivery {
+.main-nav__list--delivery {
   display: none;
 }
 
