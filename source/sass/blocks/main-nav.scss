@@ -3,7 +3,6 @@
 }
 
 .main-nav__list {
-  @include reset-indents;
   @include reset-list;
 }
 

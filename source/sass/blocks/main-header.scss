@@ -3,17 +3,12 @@
 }
 
 .main-header__title {
+  @include reset-indents;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   padding: 70px 30px 122px;
-
-  @include reset-indents;
 }
-
-// .main-header__sections {
-//   background-color: #63d1bb;
-// }
 
 .main-header__link {
   display: block;

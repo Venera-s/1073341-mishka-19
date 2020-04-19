@@ -3,12 +3,12 @@
   padding: 0;
 }
 
-@mixin color($color: #444444) {
-  color: $color;
-}
-
 @mixin reset-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  ist-style: none;
+}
+
+@mixin color($color: #444444) {
+  color: $color;
 }
