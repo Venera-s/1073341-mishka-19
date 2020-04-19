@@ -1,0 +1,11 @@
+.catalog {
+  padding-top: 30px;
+}
+
+.catalog__list {
+  @include reset-list;
+}
+
+.catalog__item {
+  padding-bottom: 30px;
+}

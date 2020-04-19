@@ -1,0 +1,26 @@
+.about-us {
+  padding-bottom: 58px;
+}
+
+.about-us__title {
+  @include reset-indents;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: $font-weight-bold;
+  padding-bottom: 31px;
+}
+
+.about-us__list {
+  @include reset-list;
+}
+
+.about-us__item {
+  font-size: 17px;
+  font-weight: $font-weight-bold;
+  line-height: 20px;
+  padding-top: 55px;
+}
+
+.about-us__item:not(:last-child) {
+  padding-bottom: 28px;
+}

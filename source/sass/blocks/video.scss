@@ -1,0 +1,54 @@
+.video {
+  position: relative;
+  padding-bottom: 58px;
+}
+
+.video__wrapper {
+  padding-top: 97px;
+  border: 1px solid #ececec;
+}
+
+.video__title {
+  @include reset-indents;
+  position: absolute;
+  top: 24px;
+  left: 119px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.video__wrapper-video {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.video__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.video__play {
+  @include reset-indents;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101px;
+  height: 76px;
+  background: url("../../img/icon-play.svg");
+  background-color: transparent;
+  border: none;
+}
+
+.video__wrapper-info {
+  padding-right: 34px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+
+.video__desc {
+  @include reset-indents;
+  font-size: 13px;
+  padding-bottom: 23px;
+}

@@ -1,0 +1,14 @@
+.inner-header {
+  background-color: #f1f1f1;
+}
+
+.inner-header__title {
+  @include reset-indents;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-top: 69px;
+  padding-bottom: 76px;
+  text-align: center;
+  color: #000000;
+}

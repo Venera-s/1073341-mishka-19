@@ -1,0 +1,11 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.social__list {
+  @include reset-list;
+}
