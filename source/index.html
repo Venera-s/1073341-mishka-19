@@ -10,33 +10,37 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo container" href="#">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
-        <div class="main-nav__container">
-          <ul class="main-nav__list main-nav__list--category">
-            <li class="main-nav__item container">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item container">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
+        <div class="main-nav__wrapper-category">
+          <a class="main-header__logo container" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Мишка">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <ul class="main-nav__list main-nav__list--category">
+              <li class="main-nav__item container">
+                <a class="main-nav__link main-nav__link--size" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item container">
+                <a class="main-nav__link main-nav__link--size" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
         </div>
-        <div class="main-nav__container">
+        <div class="main-nav__wrapper-product">
           <ul class="main-nav__list main-nav__list--product">
-            <li class="main-nav__item">
+            <li class="main-nav__item container">
               <a class="main-nav__link" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item container">
               <a class="main-nav__link" href="#">Распродажа</a>
             </li>
           </ul>
         </div>
-        <div class="main-nav__container">
+        <div class="main-nav__wrapper-user">
           <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__item container">
               <a class="main-nav__link main-nav__link--loupe" href="#">Поиск по сайту</a>
@@ -45,11 +49,11 @@
               <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
-        <div class="main-nav__container">
-          <ul class="main-nav__list main-nav__list--delivery">
-            <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
-          </ul>
+          <div class="main-nav__wrapper-delivery">
+            <ul class="main-nav__list main-nav__list--delivery">
+              <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

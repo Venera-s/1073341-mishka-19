@@ -6,7 +6,7 @@
 @mixin reset-list {
   margin: 0;
   padding: 0;
-  ist-style: none;
+  list-style: none;
 }
 
 @mixin color($color: #444444) {
