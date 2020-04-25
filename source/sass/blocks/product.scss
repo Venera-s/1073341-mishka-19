@@ -4,11 +4,10 @@
 }
 
 .product__title {
+  @include reset-indents;
   font-size: 25px;
   line-height: 30px;
   padding: 26px 0 5px;
-
-  @include reset-indents;
 }
 
 .product__week {

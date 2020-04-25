@@ -4,3 +4,10 @@
   max-width: 1150px;
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 50px;
+    width: auto;
+  }
+}
