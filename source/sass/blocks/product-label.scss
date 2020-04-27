@@ -5,3 +5,16 @@
   text-transform: uppercase;
   color: #63d1bb;
 }
+
+@media (min-width: $tablet-width) {
+  .product-label {
+    font-size: 17px;
+    line-height: 17px;
+    width: 70px;
+    text-align: center;
+}
+}
+
+// @media (min-width: $desktop-width) {
+
+// }

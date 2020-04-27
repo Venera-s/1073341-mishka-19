@@ -29,14 +29,14 @@
               <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-            <ul class="main-nav__list main-nav__list--product">
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link-arrivals" href="#">Новые поступления</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link-sale" href="#">Распродажа</a>
-              </li>
-            </ul>
+          <ul class="main-nav__list main-nav__list--product">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link-arrivals" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link-sale" href="#">Распродажа</a>
+            </li>
+          </ul>
         </div>
         <div class="main-nav__wrapper-user">
           <ul class="main-nav__list main-nav__list--user">
@@ -47,9 +47,9 @@
               <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-            <ul class="main-nav__list main-nav__list--delivery">
-              <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
-            </ul>
+          <ul class="main-nav__list main-nav__list--delivery">
+            <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -63,8 +63,10 @@
       </div>
     </div>
     <article class="product container">
-      <h2 class="product__title">Вязаные корзинки</h2>
-      <p class="product__week product-label">Товар недели</p>
+      <div class="product__wrapper">
+        <h2 class="product__title">Вязаные корзинки</h2>
+        <p class="product__week product-label">Товар недели</p>
+      </div>
       <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.
       </p>
@@ -83,7 +85,11 @@
         </tr>
       </table>
       <div class="product__image-wrapper">
-        <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вазяные корзинки">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+        <img class="product__image" src="img/triple-set-mobile@1x.jpg" alt="Вазяные корзинки">
+      </picture>
       </div>
       <p class="product__price">Цена: 990 руб.</p>
       <a class="product__btn btn" href="#">Заказать</a>

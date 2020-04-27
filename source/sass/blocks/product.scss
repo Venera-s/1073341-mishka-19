@@ -1,4 +1,5 @@
 .product {
+  padding-top: 26px;
   padding-bottom: 69px;
   // background: url("../../img/bg-zigzag-line.svg") 100% 100% no-repeat;
 }
@@ -7,7 +8,7 @@
   @include reset-indents;
   font-size: 25px;
   line-height: 30px;
-  padding: 26px 0 5px;
+  padding: 0 0 5px;
 }
 
 .product__week {
@@ -54,4 +55,53 @@
   font-weight: $font-weight-bold;
   padding-bottom: 26px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    padding-top: 43px;
+  }
+
+  .product__title {
+    @include reset-indents;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 28px;
+  }
+
+  .product__week {
+    @include reset-indents;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    padding-top: 120px;
+  }
+
+  .product__wrapper {
+    @include reset-indents;
+    flex-direction: row-reverse;
+    max-width: 700px;
+    padding-left: 47px;
+  }
+
+  .product__title {
+    @include reset-indents;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .product__week {
+    @include reset-indents;
+    padding-top: 15px;
+    padding-right: 56px;
+    box-sizing: content-box;
+  }
 }
