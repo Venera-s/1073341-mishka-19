@@ -49,3 +49,18 @@
   margin: 0 auto;
   padding-bottom: 42px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

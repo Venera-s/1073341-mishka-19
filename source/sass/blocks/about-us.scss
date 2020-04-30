@@ -1,5 +1,6 @@
 .about-us {
-  padding-bottom: 58px;
+  padding-top: 34px;
+  padding-bottom: 30px;
 }
 
 .about-us__title {
@@ -10,7 +11,7 @@
   padding-bottom: 31px;
 }
 
-.about-us__list {
+.about-us__list-column {
   @include reset-list;
 }
 
@@ -19,8 +20,140 @@
   font-weight: $font-weight-bold;
   line-height: 20px;
   padding-top: 55px;
+  padding-bottom: 28px;
+  }
+
+.about-us__item--flower {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 33px;
+    height: 38px;
+    background: url("../../img/icon-feature-flower.svg") 0% 0% no-repeat;
+  }
 }
 
-.about-us__item:not(:last-child) {
-  padding-bottom: 28px;
+.about-us__item--money {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background: url("../../img/icon-feature-money.svg") 0% 0% no-repeat;
+  }
 }
+
+.about-us__item--heart {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+    background: url("../../img/icon-feature-heart.svg") 0% 0% no-repeat;
+  }
+}
+
+.about-us__item--clew {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 35px;
+    height: 34px;
+    background: url("../../img/icon-feature-ball.svg") 0% 0% no-repeat;
+  }
+}
+
+.about-us__item--rocket {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    width: 55px;
+    height: 23px;
+    background: url("../../img/icon-feature-rocket.svg") 0% 0% no-repeat;
+  }
+}
+
+.about-us__item--gift {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+    background: url("../../img/icon-feature-gift.svg") 0% 0% no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 65px;
+    padding-bottom: 27px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 48px;
+  }
+
+  .about-us_wrapper-column {
+    display: flex;
+  }
+
+  .about-us__list-column {
+    @include reset-list;
+    width: 100%;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 83px;
+    padding-bottom: 32px;
+  }
+
+  .about-us__wrapper {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
