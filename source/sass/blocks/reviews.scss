@@ -47,11 +47,11 @@
 }
 
 .reviews__arrow--prev {
-  background: url("../../img/icon-left-arrow.svg") 50% 50% no-repeat;
+  background: url("../img/icon-left-arrow.svg") 50% 50% no-repeat;
 }
 
 .reviews__arrow--next {
-  background: url("../../img/icon-right-arrow.svg") 50% 50% no-repeat;
+  background: url("../img/icon-right-arrow.svg") 50% 50% no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +90,7 @@
   .reviews__arrow-wrapper {
     @include reset-list;
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: 5px;
     width: 26%;
   }
@@ -102,7 +102,7 @@
   .reviews__btn {
     position: absolute;
     top: 79px;
-    right: 0px;
+    right: 0;
     font-size: 17px;
     width: 26%;
   }
