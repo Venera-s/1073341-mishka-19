@@ -56,9 +56,14 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-bottom: 115px;
+    padding-bottom: 114px;
     background: url("../img/review@1x.jpg") 0% 0% no-repeat;
   }
+
+  .reviews__wrapper {
+    position: relative;
+  }
+
 
   .reviews__title {
     font-size: 43px;
@@ -69,7 +74,6 @@
 
   .reviews__list {
     @include reset-list;
-    position: relative;
   }
 
   .reviews__text {
@@ -86,9 +90,9 @@
   .reviews__arrow-wrapper {
     @include reset-list;
     position: absolute;
-    right: 53px;
+    right: 0px;
     bottom: 5px;
-    width: 22%;
+    width: 26%;
   }
 
   .reviews__arrow {
@@ -98,15 +102,15 @@
   .reviews__btn {
     position: absolute;
     top: 79px;
-    right: 50px;
+    right: 0px;
     font-size: 17px;
-    width: 23%;
+    width: 26%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 175px;
+    padding-left: 225px;
     padding-bottom: 160px;
     background-position: 6% 0%;
   }
@@ -127,11 +131,8 @@
     font-size: 17px;
   }
 
-  .reviews__arrow-wrapper {
-    width: 18%;
-  }
-
+  .reviews__arrow-wrapper,
   .reviews__btn {
-    width: 18%;
+    width: 20%;
   }
 }
