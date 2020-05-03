@@ -11,40 +11,40 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <div class="main-nav__wrapper-category">
-          <a class="main-header__logo" href="#">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Мишка">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="main-nav__list main-nav__list--category">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
+      <div class="main-nav__wrapper-first container">
+        <a class="main-header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Мишка">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list main-nav__list--category">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--loupe" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__wrapper-second">
+        <div class="main-nav__menu-second container">
           <ul class="main-nav__list main-nav__list--product">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link-arrivals" href="#">Новые поступления</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link-sale" href="#">Распродажа</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-nav__wrapper-user">
-          <ul class="main-nav__list main-nav__list--user">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--loupe" href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list--delivery">
@@ -56,8 +56,10 @@
   </header>
   <main>
     <div class="main-header">
-      <h1 class="main-header__title">Милые штуки ручной<br>работы для дома</h1>
-      <div class="main-header__sections">
+      <div class="container">
+        <h1 class="main-header__title">Милые штуки ручной<br>работы для дома</h1>
+      </div>
+      <div class="main-header__sections container">
         <a class="main-header__link main-header__link--interior" href="#">Предметы<br>интерьера</a>
         <a class="main-header__link main-header__link--toys" href="#">Детские<br>игрушки</a>
       </div>
@@ -140,7 +142,7 @@
         <a class="reviews__btn btn" href="#">Написать</a>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts container">
       <div class="contacts__wrapper container">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__wrapper-info">

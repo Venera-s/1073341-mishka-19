@@ -7,6 +7,7 @@
   font-size: 25px;
   font-weight: 700;
   padding-bottom: 27px;
+  color: #000000;
 }
 
 .reviews__list {
@@ -25,6 +26,7 @@
   line-height: 26px;
   font-weight: $font-weight-bold;
   font-style: normal;
+  color: #000000;
 }
 
 .reviews__user-nick {
@@ -68,7 +70,7 @@
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 77px;
+    padding-top: 78px;
     padding-bottom: 49px;
   }
 
@@ -92,7 +94,7 @@
     position: absolute;
     right: 0;
     bottom: 5px;
-    width: 26%;
+    width: 172px;
   }
 
   .reviews__arrow {
@@ -101,10 +103,10 @@
 
   .reviews__btn {
     position: absolute;
-    top: 79px;
+    top: 81px;
     right: 0;
     font-size: 17px;
-    width: 26%;
+    width: 175px;
   }
 }
 
@@ -112,7 +114,7 @@
   .reviews {
     padding-left: 225px;
     padding-bottom: 160px;
-    background-position: 6% 0%;
+    background-position: 50px 0;
   }
 
   .reviews__title {
@@ -129,10 +131,5 @@
 
   .reviews__user-name {
     font-size: 17px;
-  }
-
-  .reviews__arrow-wrapper,
-  .reviews__btn {
-    width: 20%;
   }
 }

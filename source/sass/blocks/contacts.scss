@@ -1,4 +1,5 @@
 .contacts {
+  padding: 0;
   padding-bottom: 39px;
 }
 
@@ -12,6 +13,7 @@
   line-height: 30px;
   font-weight: $font-weight-bold;
   padding-bottom: 26px;
+  color: #000000;
 }
 
 .contacts__email,
@@ -48,7 +50,7 @@
   padding-bottom: 42px;
 }
 
-@media (min-width: 360px) and (max-width: 767px), (min-width: 820px) and (max-width: 1149px), (min-width: 1180px) {
+@media (min-width: 360px) and (max-width: 767px), (min-width: 820px) and (max-width: 1149px) {
   .contacts__adress-text br {
     display: none;
   }
@@ -116,6 +118,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     padding-left: 225px;
+    padding-bottom: 105px;
 
 
     &::before {

@@ -4,16 +4,16 @@
 //   min-height: 3932px;
 // }
 
-// @media (min-width: $tablet-width) {
-//   body {
-//     background: url("../img/mishka-index-tablet2.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  body {
+    background: url("../img/mishka-index-tablet2.jpg") no-repeat 50% 0;
+    opacity: 0.2;
+  }
+}
 
-// @media (min-width: $desktop-width) {
-//   body {
-//     background: url("../img/mishka-index-desktop2.jpg") no-repeat 50% 0;
-//     opacity: 0.2;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  body {
+    background: url("../img/mishka-index-desktop2.jpg") no-repeat 50% 0;
+    opacity: 0.2;
+  }
+}
