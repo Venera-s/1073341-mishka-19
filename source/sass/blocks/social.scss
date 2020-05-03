@@ -1,3 +1,19 @@
-.social__link--instagramm {
-  background: url("../../img/icon-insta.svg") 100% 100% no-repeat;
+.social__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__item:not(:last-child) {
+  padding-right: 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    @include reset-indents;
+    border: none;
+  }
 }
