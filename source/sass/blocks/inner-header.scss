@@ -4,11 +4,28 @@
 
 .inner-header__title {
   @include reset-indents;
+  padding-top: 70px;
+  padding-bottom: 76px;
+  text-align: center;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
-  padding-top: 69px;
-  padding-bottom: 76px;
-  text-align: center;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-header__title {
+    padding-top: 54px;
+    padding-bottom: 55px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-header__title {
+    padding-top: 35px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
