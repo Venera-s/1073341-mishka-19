@@ -1,5 +1,5 @@
 .reviews {
-  padding-bottom: 87px;
+  padding-bottom: 47px;
 }
 
 .reviews__title {
@@ -59,13 +59,13 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-bottom: 114px;
-    background: url("../img/review@1x.jpg") 0% 0% no-repeat;
+    background:
+      url("../img/review@1x.jpg") 0% 0% no-repeat;
   }
 
   .reviews__wrapper {
     position: relative;
   }
-
 
   .reviews__title {
     font-size: 43px;
