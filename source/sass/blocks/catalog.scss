@@ -9,3 +9,31 @@
 .catalog__item {
   padding-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 69px;
+  }
+
+  .catalog__item {
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 115px;
+  }
+
+  .catalog__list {
+    display: flex;
+  }
+
+  .catalog__item {
+    padding-bottom: 57px;
+  }
+
+  .catalog__item:not(:last-child) {
+    margin-right: auto;
+  }
+}

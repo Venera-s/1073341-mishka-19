@@ -1,11 +1,11 @@
 .inner-header {
+  padding: 50px 0 56px;
   background-color: #f1f1f1;
 }
 
 .inner-header__title {
   @include reset-indents;
-  padding-top: 70px;
-  padding-bottom: 76px;
+  padding: 20px 0;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
@@ -14,17 +14,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .inner-header {
+    position: relative;
+    padding: 33px 0 71px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -2px;
+      width: 100%;
+      height: 24px;
+      background: url(../../img/bg-zigzag-fill.svg) repeat-x;
+      background-size: contain;
+    }
+  }
+
   .inner-header__title {
-    padding-top: 54px;
-    padding-bottom: 55px;
     font-size: 43px;
     line-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .inner-header {
+    padding: 15px 0 97px;
+
+    &::after {
+      height: 34px;
+    }
+  }
+
   .inner-header__title {
-    padding-top: 35px;
     font-size: 53px;
     line-height: 57px;
   }
