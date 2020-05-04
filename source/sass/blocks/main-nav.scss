@@ -159,10 +159,13 @@
   }
 
   .main-nav__menu-second {
-    // @include reset-indents;
     display: flex;
     justify-content: flex-end;
     background-color: #f9f9f9;
+  }
+
+  .main-nav__menu-second--inner {
+    background-color: #f1f1f1;
   }
 
   .main-nav__list--delivery {
@@ -170,7 +173,6 @@
     margin-left: auto;
     padding-top: 17px;
     font-size: 15px;
-    background-color: #f9f9f9;
   }
 
   .main-nav__item--delivery:not(:last-child) {
@@ -223,14 +225,18 @@
     background-color: #f9f9f9;
   }
 
-  .main-nav__link-arrivals,
-  .main-nav__link-sale {
+  .main-nav__link--arrivals,
+  .main-nav__link--sale {
     padding-top: 17px;
     padding-bottom: 17px;
   }
 
   .main-nav__link-arrivals {
-    padding-right: 62px;
+    padding-right: 31px;
+  }
+
+  .main-nav__link--sale {
+    padding-left: 31px;
   }
 
   .main-nav__list--delivery {
