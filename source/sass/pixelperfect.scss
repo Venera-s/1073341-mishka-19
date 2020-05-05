@@ -1,3 +1,25 @@
+//-------------------------------FORM-------------------------------//
+
+body {
+  background: url("../img/mishka-form-mobile.jpg") no-repeat 50% 0;
+  opacity: 0.2;
+  min-height: 3932px;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background: url("../img/mishka-form-tablet.jpg") no-repeat 50% 0;
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background: url("../img/mishka-form-desktop.jpg") no-repeat 50% 0;
+    opacity: 0.2;
+  }
+}
+
 //-------------------------------CATALOG-------------------------------//
 
 // body {
@@ -6,19 +28,19 @@
 //   min-height: 3932px;
 // }
 
-@media (min-width: $tablet-width) {
-  body {
-    background: url("../img/mishka-catalog-tablet.jpg") no-repeat 50% 0;
-    opacity: 0.2;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   body {
+//     background: url("../img/mishka-catalog-tablet.jpg") no-repeat 50% 0;
+//     opacity: 0.2;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  body {
-    background: url("../img/mishka-catalog-desktop.jpg") no-repeat 50% 0;
-    opacity: 0.2;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   body {
+//     background: url("../img/mishka-catalog-desktop.jpg") no-repeat 50% 0;
+//     opacity: 0.2;
+//   }
+// }
 
 //-------------------------------INDEX-------------------------------//
 
