@@ -27,13 +27,14 @@
 
   .catalog__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .catalog__item {
     padding-bottom: 57px;
   }
 
-  .catalog__item:not(:last-child) {
-    margin-right: auto;
+  .catalog__item:not(:nth-child(3n)) {
+    padding-right: 50px;
   }
 }
