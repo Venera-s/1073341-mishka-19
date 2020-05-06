@@ -10,7 +10,7 @@
 }
 
 .form__wrapper--type {
-  padding-bottom: 31px;
+  padding-bottom: 13px;
 }
 
 .form__wrapper-fieldset--type {
@@ -47,10 +47,6 @@
   position: relative;
 }
 
-.form__wrapper--type:not(:last-child) {
-  min-height: 60px;
-}
-
 .form__label {
   display: block;
   font-size: 17px;
@@ -61,6 +57,7 @@
 }
 
 .form__label--type {
+  min-height: 60px;
   padding-top: 11px;
   padding-bottom: 13px;
 }
