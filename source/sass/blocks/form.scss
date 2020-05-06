@@ -1,5 +1,6 @@
 .form {
   padding-top: 22px;
+  padding-bottom: 56px;
 }
 
 .form__header {
@@ -139,7 +140,7 @@
 }
 
 .form__wrapper--data {
-  padding-bottom: 31px;
+  padding-bottom: 33px;
 }
 
 .form__fieldset--data {
@@ -151,7 +152,7 @@
 }
 
 .form__box-data:not(:last-child) {
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 }
 
 .form__legend--email {
@@ -186,9 +187,9 @@
   padding-bottom: 24px;
 }
 
-.form__textarea-item {
-  padding-bottom: 10px;
-}
+// .form__textarea-item {
+//   padding-bottom: 10px;
+// }
 
 .form__note {
   @include reset-indents;
@@ -199,7 +200,7 @@
 }
 
 .form__wrapper--add {
-  padding-bottom: 56px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -225,7 +226,7 @@
   }
 
   .form__wrapper-fieldset {
-    width: 167px
+    width: 167px;
   }
 
   .form__wrapper-fieldset,
@@ -289,7 +290,7 @@
   }
 
   .form__box--color {
-    width: 47%;
+    width: 48%;
   }
 
   .form__input-color + .form__label--color::before {
@@ -309,8 +310,8 @@
   .form__wrapper--data {
     display: flex;
     align-items: baseline;
-    padding-top: 51px;
-    padding-bottom: 49px;
+    padding-top: 47px;
+    padding-bottom: 50px;
   }
 
   .form__wrap-data {
@@ -324,7 +325,7 @@
   }
 
   .form__box-data:not(:last-child) {
-    padding-bottom: 24px;
+    padding-bottom: 23px;
   }
 
   .form__label--data {
@@ -333,12 +334,54 @@
   }
 
   .form__wrapper--contacts {
-    padding-top: 67px;
-    padding-bottom: 14px;
+    padding-top: 47px;
+    padding-bottom: 28px;
   }
 
   .form__wrapper--contact {
     display: flex;
+    align-items: baseline;
+    padding-bottom: 22px;
+  }
+
+  .form__input {
+    font-size: 19px;
+    line-height: 24px;
+    padding-left: 17px;
+  }
+
+  .form__wrapper--add {
+    padding-bottom: 47px;
+    padding-top: 50px;
+}
+
+  .form__add {
+    display: flex;
+  }
+
+  .form__fieldset-add {
+    padding-top: 17px;
+  }
+
+  .form__comment {
+    font-size: 19px;
+  }
+
+  .form__wrap-note {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form__note {
+    @include reset-indents;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__btn {
+    width: 230px;
   }
 }
 
@@ -365,4 +408,11 @@
     width: 29%;
   }
 
+  .form__wrapper--add {
+    padding-bottom: 42px;
+  }
+
+  .form__wrap-note {
+    width: 803px;
+  }
 }
