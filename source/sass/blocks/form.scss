@@ -13,7 +13,7 @@
   padding-bottom: 31px;
 }
 
-.form__fieldset--type {
+.form__wrapper-fieldset--type {
   padding-bottom: 23px;
 }
 
@@ -24,16 +24,11 @@
   border-top: 1px solid #62d1ba;
 }
 
-
-// .form__fieldset--type {
-//   padding-top: 34px;
-// }
-
 .form__wrapper--color {
   padding-bottom: 18px;
 }
 
-.form__fieldset--color {
+.form__wrapper-fieldset--color {
   padding-bottom: 18px;
 }
 
@@ -53,7 +48,6 @@
 }
 
 .form__wrapper--type:not(:last-child) {
-  // padding-bottom: 24px;
   min-height: 60px;
 }
 
@@ -65,10 +59,6 @@
   padding-left: 62px;
   color: #000000;
 }
-
-// .form__wrapper--color:not(:last-child) {
-//   padding-bottom: 43px;
-// }
 
 .form__label--type {
   padding-top: 11px;
@@ -143,7 +133,7 @@
   padding-bottom: 33px;
 }
 
-.form__fieldset--data {
+.form__wrapper-fieldset--data {
   padding-bottom: 29px;
 }
 
@@ -159,12 +149,11 @@
   padding-right: 23px;
 }
 
-.form__wrapper--contact {
+.form__box-contacts {
   padding-bottom: 33px;
 }
 
-.form__fieldset-tel,
-.form__fieldset-email {
+.form__wrapper-fieldset--indent {
   padding-bottom: 6px;
 }
 
@@ -183,13 +172,9 @@
   padding: 15px;
 }
 
-.form__fieldset-add {
+.form__wrapper-fieldset--add {
   padding-bottom: 24px;
 }
-
-// .form__textarea-item {
-//   padding-bottom: 10px;
-// }
 
 .form__note {
   @include reset-indents;
@@ -234,7 +219,7 @@
     @include reset-indents;
   }
 
-  .form__wrapper--width {
+  .form__content {
     width: 75%;
   }
 
@@ -263,7 +248,7 @@
     border: 10px solid #62d1ba;
   }
 
-  .form__box-color {
+  .form__section-color {
     background-color: #f1f1f1;
   }
 
@@ -279,17 +264,13 @@
     padding-bottom: 35px;
   }
 
-  .form__fieldset--color {
-    width: 25%;
-  }
-
-  .form__wrapper-checkbox {
+  .form__content--checkbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .form__box--color {
+  .form__wrapper-item--checkbox {
     width: 48%;
   }
 
@@ -314,10 +295,6 @@
     padding-bottom: 50px;
   }
 
-  .form__wrap-data {
-    width: 71%;
-  }
-
   .form__box-data {
     display: flex;
     align-items: baseline;
@@ -338,7 +315,7 @@
     padding-bottom: 28px;
   }
 
-  .form__wrapper--contact {
+  .form__box-contacts {
     display: flex;
     align-items: baseline;
     padding-bottom: 22px;
@@ -359,7 +336,7 @@
     display: flex;
   }
 
-  .form__fieldset-add {
+  .form__wrapper-fieldset--add {
     padding-top: 17px;
   }
 
@@ -404,7 +381,11 @@
     width: 111px;
   }
 
-  .form__box--color {
+  .form__content--width {
+    width: 71%;
+  }
+
+  .form__wrapper-item--checkbox {
     width: 29%;
   }
 
