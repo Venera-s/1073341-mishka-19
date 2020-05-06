@@ -158,8 +158,7 @@
   padding-right: 23px;
 }
 
-.form__wrapper-tel,
-.form__wrapper-email {
+.form__wrapper--contact {
   padding-bottom: 33px;
 }
 
@@ -226,15 +225,16 @@
   }
 
   .form__wrapper-fieldset {
-    width: 25%;
+    width: 167px
   }
 
+  .form__wrapper-fieldset,
   .form__legend {
     @include reset-indents;
   }
 
-  .form__fieldset--type {
-    // padding-right: 131px;
+  .form__wrapper--width {
+    width: 75%;
   }
 
   .form__label {
@@ -266,9 +266,79 @@
     background-color: #f1f1f1;
   }
 
+  .form__label--color {
+    padding-top: 25px;
+    padding-bottom: 33px;
+  }
+
   .form__wrapper--color {
     display: flex;
     align-items: baseline;
+    padding-top: 42px;
+    padding-bottom: 35px;
+  }
+
+  .form__fieldset--color {
+    width: 25%;
+  }
+
+  .form__wrapper-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__box--color {
+    width: 47%;
+  }
+
+  .form__input-color + .form__label--color::before {
+    top: 8px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .form__input-color:checked + .form__label--color::after {
+    top: 26px;
+    left: 11px;
+    width: 34px;
+    height: 22px;
+    background: url("../img/icon-tick-big.svg") no-repeat;
+  }
+
+  .form__wrapper--data {
+    display: flex;
+    align-items: baseline;
+    padding-top: 51px;
+    padding-bottom: 49px;
+  }
+
+  .form__wrap-data {
+    width: 71%;
+  }
+
+  .form__box-data {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .form__box-data:not(:last-child) {
+    padding-bottom: 24px;
+  }
+
+  .form__label--data {
+    @include reset-indents;
+    padding-right: 25px;
+  }
+
+  .form__wrapper--contacts {
+    padding-top: 67px;
+    padding-bottom: 14px;
+  }
+
+  .form__wrapper--contact {
+    display: flex;
   }
 }
 
@@ -288,7 +358,11 @@
   }
 
   .form__wrapper-fieldset {
-    width: 11%;
+    width: 111px;
+  }
+
+  .form__box--color {
+    width: 29%;
   }
 
 }
