@@ -1,4 +1,4 @@
-.copyright {
+.copyright__logo {
   display: flex;
   justify-content: center;
 }
@@ -10,4 +10,10 @@
   font-weight: bold;
   padding-right: 30px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__logo {
+    justify-content: space-between;
+  }
 }

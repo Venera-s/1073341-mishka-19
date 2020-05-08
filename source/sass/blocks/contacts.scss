@@ -51,6 +51,14 @@
   @include color;
   padding-bottom: 4px;
   border-bottom: 1px solid #62d1ba;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+  }
 }
 
 .contacts__email {

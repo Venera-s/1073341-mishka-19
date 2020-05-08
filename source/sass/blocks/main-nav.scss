@@ -32,6 +32,14 @@
   padding-bottom: 28px;
   padding-left: 75px;
   color: #000000;
+
+  &[href]:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .main-nav__list--product {
@@ -40,29 +48,41 @@
 
 .main-nav__link--loupe {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 31px;
-    left: 32px;
-    width: 21px;
-    height: 18px;
-    background: url("../img/icon-search.svg") 0 0 no-repeat;
+.main-nav__icon-loupe {
+  position: absolute;
+  top: 31px;
+  left: 32px;
+
+  &:hover {
+    fill: #63d1bb;
+    fill-opacity: 1;
+
+  }
+
+  &:active {
+    fill-opacity: 0.3;
   }
 }
 
+
 .main-nav__link--basket {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 21px;
-    height: 18px;
-    background: url("../img/icon-cart.svg") 0 0 no-repeat;
+.main-nav__icon-basket {
+  position: absolute;
+  top: 29px;
+  left: 30px;
+
+  &:hover {
+    fill: #63d1bb;
+    fill-opacity: 1;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
   }
 }
 
@@ -119,12 +139,6 @@
     padding-right: 35px;
   }
 
-  // .main-nav__list--user {
-  //   display: flex;
-  //   justify-content: flex-end;
-  //   border-bottom: 1px solid #ececec;
-  // }
-
   .main-nav__link--loupe,
   .main-nav__link--basket {
     padding-top: 31px;
@@ -137,36 +151,37 @@
     padding: 50px 31px 14px 51px;
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
+  }
 
-    &::before {
-      top: 37px;
-      left: 33px;
-    }
+  .main-nav__icon-loupe {
+    top: 37px;
+    left: 35px;
   }
 
   .main-nav__link--basket {
     padding-right: 0;
     padding-left: 85px;
+  }
 
-    &::before {
-      top: 35px;
-      left: 30px;
-    }
+  .main-nav__icon-basket {
+    top: 33px;
+    left: 34px;
   }
 
   .main-nav__wrapper-second {
     border-top: 1px solid #ececec;
+    background-color: #f9f9f9;
+  }
+
+  .main-nav__wrapper-second--inner {
+    background-color: #f1f1f1;
   }
 
   .main-nav__menu-second {
     display: flex;
     justify-content: flex-end;
-    background-color: #f9f9f9;
   }
 
-  .main-nav__menu-second--inner {
-    background-color: #f1f1f1;
-  }
 
   .main-nav__list--delivery {
     display: flex;
@@ -219,10 +234,6 @@
   .main-nav__list--product {
     display: flex;
     font-size: 15px;
-  }
-
-  .main-nav__wrapper-second {
-    background-color: #f9f9f9;
   }
 
   .main-nav__link--arrivals,

@@ -59,7 +59,12 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-bottom: 114px;
-    background: url("../img/review@1x.jpg") 0% 0% no-repeat;
+    background: url("../img/review@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__wrapper {
