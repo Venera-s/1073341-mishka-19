@@ -23,6 +23,15 @@
   padding-top: 21px;
   padding-bottom: 17px;
   border-bottom: 1px solid #ececec;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__link {
@@ -40,6 +49,16 @@
   &[href]:active {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #63d1bb;
+    fill-opacity: 1;
+  }
+
+  &:active svg {
+    fill-opacity: 0.3;
+  }
 }
 
 .main-nav__list--product {
@@ -54,18 +73,7 @@
   position: absolute;
   top: 31px;
   left: 32px;
-
-  &:hover {
-    fill: #63d1bb;
-    fill-opacity: 1;
-
-  }
-
-  &:active {
-    fill-opacity: 0.3;
-  }
 }
-
 
 .main-nav__link--basket {
   position: relative;
@@ -181,7 +189,6 @@
     display: flex;
     justify-content: flex-end;
   }
-
 
   .main-nav__list--delivery {
     display: flex;

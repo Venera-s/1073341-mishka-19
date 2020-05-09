@@ -43,8 +43,16 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   background-color: transparent;
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .modal-basket__item:not(:nth-child(3n)) {

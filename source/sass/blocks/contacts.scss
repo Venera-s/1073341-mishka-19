@@ -52,12 +52,14 @@
   padding-bottom: 4px;
   border-bottom: 1px solid #62d1ba;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #46c1ae;
+    border-color: #46c1ae;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
+    opacity: 0.3;
   }
 }
 

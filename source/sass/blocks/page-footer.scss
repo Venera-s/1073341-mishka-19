@@ -27,6 +27,15 @@
   .page-footer__logo {
     display: block;
     padding-right: 83px;
+
+    &[href]:hover svg,
+    &[href]:focus svg {
+      fill: #46c1ae;
+    }
+
+    &[href]:active svg {
+      fill-opacity: 0.3;
+    }
   }
 
   .page-footer__social {
