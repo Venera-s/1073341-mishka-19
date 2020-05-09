@@ -154,7 +154,7 @@
               <input class="form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
             </div>
             <div class="form__box-data">
-              <label class="form__label form__label--data">Фамилия:</label>
+              <label class="form__label form__label--data" for="surname-field">Фамилия:</label>
               <input class="form__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
             </div>
             <div class="form__box-data">
@@ -172,7 +172,8 @@
                 </fieldset>
               </div>
               <div class="form__content form__content--width form__content--icon">
-                <input class="form__input form__input--contacts" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <label class="visually-hidden" for="tel-field">Тел</label>
+                <input class="form__input form__input--contacts" type="tel" name="tel" id="tel-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </div>
             </div>
             <div class="form__box-contacts">
@@ -182,7 +183,8 @@
                 </fieldset>
               </div>
               <div class="form__content form__content--width form__content--icon">
-                <input class="form__input form__input--contacts" type="email" name="email" placeholder="Ваш Email*" required>
+                <label class="visually-hidden" for="email-field">E-Mail</label>
+                <input class="form__input form__input--contacts" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
               </div>
             </div>
           </div>
