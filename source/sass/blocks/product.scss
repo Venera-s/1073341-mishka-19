@@ -52,6 +52,10 @@
   text-align: center;
 }
 
+.product__image {
+  width: 100%;
+}
+
 .product__price {
   @include reset-indents;
   font-size: 17px;

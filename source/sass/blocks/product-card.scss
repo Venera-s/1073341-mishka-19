@@ -1,6 +1,7 @@
 .product-card__image {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .product-card__wrapper {
@@ -57,6 +58,16 @@
   @include reset-indents;
   width: 20px;
   height: 20px;
+
+  &:hover .product-card__icon,
+  &:focus .product-card__icon {
+    fill: #63d1bb;
+    fill-opacity: 1;
+  }
+
+  &:active .product-card__icon {
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

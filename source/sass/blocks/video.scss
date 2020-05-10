@@ -26,6 +26,7 @@
 .video__image {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .video__play {
@@ -39,6 +40,14 @@
   background: url("../img/icon-play.svg");
   background-color: transparent;
   border: none;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
 }
 
 .video__wrapper-info {
@@ -82,7 +91,6 @@
     padding-bottom: 35px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .video {

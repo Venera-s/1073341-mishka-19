@@ -16,17 +16,17 @@
   color: #000000;
 }
 
-.main-header__section {
+.main-header__sections {
   @include reset-indents;
   width: 100%;
   transform: translateY(5px);
 }
 
-.main-header__interior {
+.main-header__sections--interior {
   background-color: #63d1bb;
 }
 
-.main-header__toys {
+.main-header__sections--toys {
   background-color: #56c3b2;
 }
 
@@ -104,7 +104,7 @@
     padding: 111px 0 374px;
   }
 
-  .main-header__sections {
+  .main-header__wrapper-sections {
     display: flex;
     justify-content: center;
     padding: 0 50px;
