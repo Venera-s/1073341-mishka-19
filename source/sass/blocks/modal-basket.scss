@@ -1,5 +1,5 @@
 .modal-basket {
-  display: none;
+  // display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -63,6 +63,12 @@
   border-color: #63d1bb;
   color: #ffffff;
   background-color: #63d1bb;
+
+  &:hover,
+  &:focus {
+    background-color: #54b3a0;
+    border-color: #54b3a0;
+  }
 }
 
 @media (min-width: $tablet-width) {
