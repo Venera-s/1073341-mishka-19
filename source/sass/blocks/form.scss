@@ -112,7 +112,7 @@
 .filter-input:checked + label::before {
   width: 27px;
   height: 23px;
-  background: url('../img/checkbox-on.svg') no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .form__input-type:checked + .form__label--type {

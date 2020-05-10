@@ -16,10 +16,13 @@
   color: #000000;
 }
 
+.main-header__wrapper-sections {
+  padding: 0;
+}
+
 .main-header__sections {
   @include reset-indents;
   width: 100%;
-  transform: translateY(5px);
 }
 
 .main-header__sections--interior {
@@ -66,8 +69,11 @@
   }
 }
 
-.main-header__icon-interior {
+.main-header__icon {
   position: absolute;
+}
+
+.main-header__icon--interior {
   top: 23px;
   right: 35px;
 
@@ -77,8 +83,7 @@
   }
 }
 
-.main-header__icon-toys {
-  position: absolute;
+.main-header__icon--toys {
   top: 21px;
   right: 27px;
 
@@ -90,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    background: #f9f9f9 url("../img/hero-tablet@1x.jpg") 50% 58% no-repeat;
+    background: #f9f9f9 url("../img/hero-tablet@1x.jpg") 50% 105% no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -120,12 +125,12 @@
     padding-right: 83px;
   }
 
-  .main-header__icon-interior {
+  .main-header__icon--interior {
     top: 30px;
     right: 35px;
   }
 
-  .main-header__icon-toys {
+  .main-header__icon--toys {
     top: 32px;
     right: 33px;
   }
@@ -147,6 +152,9 @@
     padding: 95px 0 359px;
   }
 
+  .main-header__wrapper-sections {
+    padding: 0 50px;
+  }
 
   .main-header__link {
     display: block;

@@ -69,8 +69,11 @@
   position: relative;
 }
 
-.main-nav__icon-loupe {
+.main-nav__icon {
   position: absolute;
+}
+
+.main-nav__icon--loupe {
   top: 31px;
   left: 32px;
 }
@@ -79,8 +82,7 @@
   position: relative;
 }
 
-.main-nav__icon-basket {
-  position: absolute;
+.main-nav__icon--basket {
   top: 29px;
   left: 30px;
 
@@ -120,7 +122,9 @@
   .main-nav__list--category {
     position: absolute;
     bottom: 0;
+    left: 0;
     display: flex;
+    padding-left: 50px;
     font-size: 15px;
   }
 
@@ -143,6 +147,11 @@
     display: flex;
   }
 
+  .main-nav__item--loupe {
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+
   .main-nav__link--catalog {
     padding-right: 35px;
   }
@@ -157,11 +166,9 @@
     display: block;
     font-size: 0;
     padding: 50px 31px 14px 51px;
-    border-right: 1px solid #ececec;
-    border-left: 1px solid #ececec;
   }
 
-  .main-nav__icon-loupe {
+  .main-nav__icon--loupe {
     top: 37px;
     left: 35px;
   }
@@ -171,7 +178,7 @@
     padding-left: 85px;
   }
 
-  .main-nav__icon-basket {
+  .main-nav__icon--basket {
     top: 33px;
     left: 34px;
   }
@@ -187,7 +194,7 @@
 
   .main-nav__menu-second {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .main-nav__list--delivery {
@@ -222,6 +229,7 @@
     position: static;
     display: flex;
     order: -1;
+    padding-left: 0;
     font-size: 17px;
   }
 
@@ -258,7 +266,8 @@
   }
 
   .main-nav__list--delivery {
-    padding-top: 17px;
+    // margin-left: 0;
+    // padding-top: 17px;
   }
 }
 

@@ -2,9 +2,14 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__social {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .page-footer__wrapper {
   padding-top: 30px;
-  padding-bottom: 23px;
+  padding-bottom: 28px;
 }
 
 .page-footer__logo {
@@ -12,7 +17,7 @@
 }
 
 .page-footer__copyright {
-  padding-top: 56px;
+  padding-top: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,12 +33,12 @@
     display: block;
     padding-right: 83px;
 
-    &[href]:hover svg,
-    &[href]:focus svg {
+    &[href]:hover .page-footer__logo-image,
+    &[href]:focus .page-footer__logo-image {
       fill: #46c1ae;
     }
 
-    &[href]:active svg {
+    &[href]:active .page-footer__logo-image {
       fill-opacity: 0.3;
     }
   }
