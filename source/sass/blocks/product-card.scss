@@ -1,12 +1,21 @@
 .product-card__image {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .product-card__wrapper {
   padding-left: 27px;
   padding-right: 27px;
   border: 1px solid #ededed;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product-card__info {
@@ -57,6 +66,16 @@
   @include reset-indents;
   width: 20px;
   height: 20px;
+
+  &:hover .product-card__icon-basket,
+  &:focus .product-card__icon-basket {
+    fill: #63d1bb;
+    fill-opacity: 1;
+  }
+
+  &:active .product-card__icon-basket {
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

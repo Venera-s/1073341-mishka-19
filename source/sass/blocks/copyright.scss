@@ -1,6 +1,16 @@
-.copyright {
+.copyright__logo {
+  position: relative;
   display: flex;
   justify-content: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .copyright__logo-image,
+  &:focus .copyright__logo-image {
+    fill: #46c1ae;
+  }
 }
 
 .copyright__text {
@@ -10,4 +20,14 @@
   font-weight: bold;
   padding-right: 30px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__logo {
+    justify-content: space-between;
+  }
+
+  .copyright__logo-image {
+    right: 0;
+  }
 }

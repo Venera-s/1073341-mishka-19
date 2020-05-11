@@ -51,6 +51,16 @@
   @include color;
   padding-bottom: 4px;
   border-bottom: 1px solid #62d1ba;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+    border-color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__email {
@@ -61,6 +71,7 @@
   display: block;
   margin: 0 auto;
   padding-bottom: 42px;
+  width: 100%;
 }
 
 @media (min-width: 360px) and (max-width: 767px), (min-width: 820px) and (max-width: 1149px) {
@@ -170,6 +181,7 @@
     position: absolute;
     top: 95px;
     right: 51px;
+    width: auto;
   }
 
   .contacts__btn-wrapper {
