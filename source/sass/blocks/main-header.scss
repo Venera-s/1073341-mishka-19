@@ -33,6 +33,7 @@
 //   background-color: #56c3b2;
 // }
 
+
 .main-header__link {
   display: block;
   padding: 26px 100px 29px 29px;
@@ -74,7 +75,7 @@
       bottom: 0;
       left: 0;
       z-index: -1;
-      min-width: 525px;
+      min-width: 320px;
       min-height: 103px;
       background-color: #59d5bc;
     }
@@ -110,7 +111,7 @@
       bottom: 0;
       left: 0;
       z-index: -1;
-      min-width: 525px;
+      min-width: 320px;
       min-height: 103px;
       background-color: #46c1ae;
     }
@@ -182,10 +183,22 @@
     padding: 28px 100px 34px 35px;
     font-size: 20px;
     line-height: 30px;
-  }
 
-  .main-header__link--interior {
-    padding-right: 83px;
+    &--interior {
+      padding-right: 83px;
+
+      &::before {
+        min-width: 334px;
+        min-height: 119px;
+      }
+    }
+
+    &--toys {
+      &::before {
+        min-width: 334px;
+        min-height: 119px;
+      }
+    }
   }
 
   .main-header__icon--interior {
@@ -225,5 +238,17 @@
     line-height: 30px;
     font-weight: $font-weight-bold;
     color: #ffffff;
+
+    &--interior {
+      &::before {
+        min-width: 525px;
+      }
+    }
+
+    &--toys {
+      &::before {
+        min-width: 525px;
+      }
+    }
   }
 }
