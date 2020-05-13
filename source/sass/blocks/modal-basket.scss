@@ -57,6 +57,10 @@
   }
 }
 
+.modal-basket__item--active {
+  border-color: #62d1ba;
+}
+
 .modal-basket__item:not(:nth-child(3n)) {
   margin-right: 7px;
 }
@@ -121,4 +125,3 @@
     transform: translate(-50%, -80%);
   }
 }
-
