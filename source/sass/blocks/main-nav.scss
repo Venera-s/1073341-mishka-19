@@ -13,20 +13,16 @@
   width: 40px;
   height: 30px;
   border: none;
-  background: url("../img/icon-menu-open.svg") 50% 50% no-repeat;
+  background: url("../img/icon-menu-close.svg") 50% 50% no-repeat;
   background-color: transparent;
 }
 
-.main-nav__btn--close {
-  background: url("../img/icon-menu-close.svg") 50% 50% no-repeat;
+.main-nav__btn--open {
+  background: url("../img/icon-menu-open.svg") 50% 50% no-repeat;
 }
 
 .main-nav__list--hidden {
   display: none;
-}
-
-.main-nav__list--open {
-  display: block;
 }
 
 .main-nav__list {

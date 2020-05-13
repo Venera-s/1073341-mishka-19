@@ -103,25 +103,25 @@
 
 .modal-basket__show {
   display: block;
-  animation: show 0.5s;
+  animation: show 0.3s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
 @keyframes show {
   0% {
-    transform: translate(-50%, -1000%);
+    transform: translate(-50%, -150%);
   }
 
   70% {
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
   }
 
   80% {
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -40%);
   }
 
   100% {
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -50%);
   }
 }
