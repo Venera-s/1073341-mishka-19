@@ -61,6 +61,10 @@
   border-color: #62d1ba;
 }
 
+.modal-basket__item--noactive {
+  border-color: none;
+}
+
 .modal-basket__item:not(:nth-child(3n)) {
   margin-right: 7px;
 }
