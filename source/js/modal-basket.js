@@ -1,9 +1,9 @@
-var link = document.querySelectorAll(".basket-js");
+var modalBtn = document.querySelectorAll(".basket-js");
 var popup = document.querySelector(".modal-basket");
 var overlay = document.querySelector(".overlay");
 
-for (var i = 0; i < link.length; i++) {
-  link[i].addEventListener("click", function (evt) {
+for (var i = 0; i < modalBtn.length; i++) {
+  modalBtn[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-basket__show");
     overlay.classList.add("overlay__show")
