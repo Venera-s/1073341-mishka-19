@@ -11,6 +11,7 @@
   border-bottom: 1px solid #c7c7c7;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
 .modal-basket__title {
@@ -46,13 +47,22 @@
   border: 2px solid rgba(68, 68, 68, 0.1);
   background-color: transparent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: rgba(68, 68, 68, 0.3);
   }
 
   &:active {
     border-color: #62d1ba;
   }
+}
+
+.modal-basket__item--active {
+  border-color: #62d1ba;
+}
+
+.modal-basket__item--noactive {
+  border-color: none;
 }
 
 .modal-basket__item:not(:nth-child(3n)) {
@@ -92,5 +102,30 @@
 
   .modal-basket__item {
     width: 113px;
+  }
+}
+
+.modal-basket__show {
+  display: block;
+  animation: show 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -150%);
+  }
+
+  70% {
+    transform: translate(-50%, -30%);
+  }
+
+  80% {
+    transform: translate(-50%, -40%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
   }
 }
