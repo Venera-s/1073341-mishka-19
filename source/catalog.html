@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Каталог товаров интернет-магазина Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -226,9 +228,11 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Интенсив по верстке 2 уровня HTML Academy">
           <p class="copyright__text">Разработано</p>
-          <svg class="copyright__logo-image" fill="#63d1bb" width="27" height="35">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
-          </svg>
+          <div class="copyright__logo-wrapper">
+            <svg class="copyright__logo-image" fill="#63d1bb" width="27" height="35">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
+          </div>
         </a>
       </div>
     </div>
