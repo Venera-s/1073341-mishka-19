@@ -1,6 +1,6 @@
 .product {
   padding-top: 26px;
-  padding-bottom: 36px;
+  padding-bottom: 30px;
 }
 
 .product__wrapper-title {
@@ -62,6 +62,10 @@
   font-weight: $font-weight-bold;
   padding-bottom: 26px;
   text-align: center;
+}
+
+.product__btn {
+  margin-bottom: 6px;
 }
 
 @media (min-width: $tablet-width) {

@@ -23,6 +23,5 @@
 @media (min-width: $tablet-width) {
   .social__list {
     @include reset-indents;
-    border: none;
   }
 }
