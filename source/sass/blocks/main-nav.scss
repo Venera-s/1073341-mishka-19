@@ -243,6 +243,7 @@
 
   .main-nav__list--user {
     display: flex;
+    max-width: 355px;
   }
 
   .main-nav__list--category {
@@ -250,6 +251,7 @@
     display: flex;
     order: -1;
     padding-left: 0;
+    max-width: 415px;
     font-size: 17px;
   }
 
@@ -258,7 +260,7 @@
     padding: 31px 35px 33px 0;
   }
 
-  .main-nav__link--catalog {
+  .main-nav__item--catalog {
     border-right: 1px solid #ececec;
   }
 
@@ -286,6 +288,7 @@
   }
 
   .main-nav__list--delivery {
+    flex-wrap: wrap;
     max-width: 500px;
   }
 }
