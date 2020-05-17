@@ -11,13 +11,14 @@
 }
 
 .social__link {
-  &:hover svg,
-  &:focus svg {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: #46c1ae;
   }
 
-  &:active svg {
-    fill: rgba(70, 193, 174, 0.3);
+  &:active .social__icon {
+    fill: rgb(70, 193, 174);
+    opacity: 0.3;
   }
 }
 
