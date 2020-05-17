@@ -220,6 +220,7 @@
     display: flex;
     margin-left: auto;
     padding-top: 17px;
+    max-width: 305px;
     font-size: 15px;
   }
 
@@ -282,5 +283,9 @@
 
   .main-nav__link--sale {
     padding-left: 31px;
+  }
+
+  .main-nav__list--delivery {
+    max-width: 500px;
   }
 }
