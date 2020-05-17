@@ -248,21 +248,11 @@
   right: 4px;
 }
 
-.form__comment {
-  font-family: inherit;
-  font-size: 17px;
-  line-height: 18px;
-  background-color: transparent;
-  min-height: 142px;
-  width: 100%;
-  border: 2px solid #444444;
+.form__input--comment {
   padding: 15px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: #62d1ba;
-  }
+  line-height: 18px;
+  min-height: 142px;
+  border: 2px solid #444444;
 }
 
 .form__wrapper-fieldset--add {
@@ -445,10 +435,6 @@
 
   .form__wrapper-fieldset--add {
     padding-top: 17px;
-  }
-
-  .form__comment {
-    font-size: 19px;
   }
 
   .form__wrap-note {
