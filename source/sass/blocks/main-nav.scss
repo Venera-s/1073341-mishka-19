@@ -145,10 +145,13 @@
 
   .main-nav__list--category {
     position: absolute;
-    bottom: 0;
+    top: 107px;
     left: 0;
+    z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 50px;
+    max-width: 400px;
     font-size: 15px;
   }
 
@@ -156,6 +159,11 @@
   .main-nav__link--knitting {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .main-nav__list--product {
+    max-width: 600px;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
@@ -284,12 +292,8 @@
     padding-bottom: 17px;
   }
 
-  .main-nav__link-arrivals {
-    padding-right: 31px;
-  }
-
-  .main-nav__link--sale {
-    padding-left: 31px;
+  .main-nav__link--arrivals {
+    padding-right: 62px;
   }
 
   .main-nav__list--delivery {

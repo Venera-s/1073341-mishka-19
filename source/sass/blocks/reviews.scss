@@ -105,6 +105,10 @@
     line-height: 27px;
   }
 
+  .reviews__user-nick {
+    width: 450px;
+  }
+
   .reviews__arrow-wrapper {
     @include reset-list;
     position: absolute;
@@ -160,5 +164,9 @@
 
   .reviews__user-name {
     font-size: 17px;
+  }
+
+  .reviews__user-nick {
+    width: 650px;
   }
 }
