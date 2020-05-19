@@ -43,7 +43,7 @@
 }
 
 .product__field {
-  padding-right: 12px;
+  width: 98px;
   font-weight: 400;
 }
 
@@ -105,10 +105,6 @@
 
   .product__list {
     margin-bottom: 54px;
-  }
-
-  .product__field {
-    padding-right: 0;
   }
 
   .product__image-wrapper {

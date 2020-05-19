@@ -7,18 +7,23 @@
 }
 
 .main-nav__btn {
+  display: none;
+}
+
+.main-nav__btn--open {
+  display: block;
   position: absolute;
   top: 24px;
   right: 21px;
   width: 40px;
   height: 30px;
   border: none;
-  background: url("../img/icon-menu-close.svg") 50% 50% no-repeat;
+  background: url("../img/icon-menu-open.svg ") 50% 50% no-repeat;
   background-color: transparent;
 }
 
-.main-nav__btn--open {
-  background: url("../img/icon-menu-open.svg") 50% 50% no-repeat;
+.main-nav__btn--close {
+  background: url("../img/icon-menu-close.svg") 50% 50% no-repeat;
 }
 
 .main-nav__list--hidden {

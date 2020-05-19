@@ -10,8 +10,9 @@ for (var i = 0; i < menuItem.length; i++) {
 
 menuBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  menuBtn.classList.toggle("main-nav__btn--open");
+  menuBtn.classList.toggle("main-nav__btn--close");
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].classList.toggle("main-nav__list--hidden")
   };
 });
+
