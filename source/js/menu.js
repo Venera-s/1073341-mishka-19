@@ -15,4 +15,3 @@ menuBtn.addEventListener("click", function (evt) {
     menuItem[i].classList.toggle("main-nav__list--hidden")
   };
 });
-

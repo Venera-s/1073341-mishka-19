@@ -29,22 +29,12 @@
       height: 24px;
       background: url("../img/bg-zigzag-fill.svg") repeat-x;
       background-size: contain;
+    }
   }
-  }
+
   .inner-header {
-    // position: relative;
     padding-top: 33px;
     padding-bottom: 71px;
-
-    // &::after {
-    //   position: absolute;
-    //   content: "";
-    //   bottom: -2px;
-    //   width: 100%;
-    //   height: 24px;
-    //   background: url("../img/bg-zigzag-fill.svg") repeat-x;
-    //   background-size: contain;
-    // }
   }
 
   .inner-header__title {
@@ -59,16 +49,12 @@
 
     &::after {
       height: 34px;
+    }
+  }
 
-  }
-  }
   .inner-header {
     padding-top: 15px;
     padding-bottom: 97px;
-
-    // &::after {
-    //   height: 34px;
-    // }
   }
 
   .inner-header__title {
