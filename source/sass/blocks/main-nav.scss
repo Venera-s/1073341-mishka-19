@@ -264,9 +264,14 @@
     display: flex;
     order: -1;
     padding-left: 0;
-    max-width: 415px;
+    max-width: 420px;
     font-size: 17px;
   }
+
+  // .main-nav__item--catalog,
+  // .main-nav__item--knitting {
+  //   max-width: 210px;
+  // }
 
   .main-nav__link--catalog,
   .main-nav__link--knitting {
