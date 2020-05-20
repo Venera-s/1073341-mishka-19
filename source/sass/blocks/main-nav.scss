@@ -262,6 +262,7 @@
   .main-nav__list--category {
     position: static;
     display: flex;
+    flex-wrap: nowrap;
     order: -1;
     padding-left: 0;
     max-width: 420px;

@@ -32,6 +32,7 @@
 .contacts__email,
 .contacts__adress {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__email-name,
@@ -86,7 +87,7 @@
   width: 100%;
 }
 
-@media (min-width: 360px) and (max-width: 767px), (min-width: 820px) and (max-width: 1149px) {
+@media (min-width: 360px) and (max-width: 768px), (min-width: 820px) and (max-width: 1150px) {
   .contacts__adress-text br {
     display: none;
   }
@@ -125,6 +126,14 @@
 
   .contacts__wrapper-info {
     display: flex;
+  }
+
+  .contacts__email {
+    padding-right: 10px;
+  }
+
+  .contacts__adress {
+    flex-wrap: nowrap;
   }
 
   .contacts__email,
@@ -173,8 +182,11 @@
   }
 
   .contacts__wrapper {
+    @include reset-indents;
+    margin-right: auto;
     padding: 0;
-    padding-bottom: 79px;
+    padding-bottom: 49px;
+    width: 330px;
   }
 
   .contacts__title {
@@ -187,11 +199,6 @@
   .contacts__wrapper-info {
     display: flex;
     flex-direction: column;
-  }
-
-  .contacts__adress-text,
-  .contacts__email-text {
-    width: 250px;
   }
 
   .contacts__wrapper-map {
